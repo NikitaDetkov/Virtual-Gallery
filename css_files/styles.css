@@ -1,0 +1,199 @@
+@font-face {
+    font-family: raleway;
+    src: url(../fonts/raleway-v22-cyrillic-100.woff2);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../fonts/raleway-v22-cyrillic-300.woff2);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: raleway_m;
+    src: url(../fonts/raleway-v22-cyrillic-900.woff2);
+    font-weight: 900;
+}
+
+:root {
+    --dark: black;
+    --light: white;
+    --sizeindex: calc(1vw + 1vh);
+}
+
+body {
+    background: var(--dark);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    color: var(--light);
+    font-family: raleway, sans-serif;
+    font-weight: 100; 
+}
+
+.heading {
+    text-transform: uppercase;
+    width: min-content;
+    line-height: 1;
+    margin: 10vh auto;
+    
+    font-size: calc(var(--sizeindex) * 3.8);
+    background: linear-gradient(45deg, DarkMagenta, Tomato, Violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading.small_mb {
+    margin-bottom: 8vh;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;     
+}
+
+.container_enter {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+.container_enter_center {
+    margin: 5vh 0;
+}
+
+.container_buttons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.button {
+    cursor: pointer;
+
+    font-size: calc(var(--sizeindex) * 0.6);
+    font-weight: 300;
+    font-family: raleway, sans-serif;
+
+    color: var(--light);
+    background-color: var(--dark);
+    padding: 1vh 2vw;
+    border: var(--light) solid 1px;
+    border-radius: calc(var(--sizeindex));
+    opacity: 0.7;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.button:active {
+    opacity: 1;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.comment {
+    color: var(--light);
+    font-size: calc(var(--sizeindex) * 0.8);
+    font-weight: 300;
+}
+
+.comment_block {
+    display: flex;
+    background: linear-gradient(45deg, DarkMagenta, Tomato, Violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: calc(var(--sizeindex) * 1.2);
+    font-weight: 300;
+    margin-bottom: 3vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.inp_text {
+    font-size: calc(var(--sizeindex) * 0.8);
+    font-weight: 400;    
+    font-family: raleway, sans-serif;
+
+    border-radius: calc(var(--sizeindex) * 0.2);
+    border: 0;
+
+    color: var(--dark);
+    background-color: var(--light);
+    width: 14vw;
+    padding: 0.3vh 0.6vw;
+}
+
+.inp_text.inp_list {
+    width: 15.2vw;
+    padding: 0.2vh 0.4vw;
+}   
+
+.inp_text.inp_list_big {
+    width: 35vw;
+    padding: 0.2vh 0.4vw;
+}   
+
+.left_margin {
+    margin-left: 1vw;
+}
+
+.right_margin {
+    margin-right: 1vw;
+}
+
+.bottom_margin {
+    margin-bottom: 1vh;
+}
+
+.input_file {
+	opacity: 0;
+	width: 0;
+    height: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.file_name {
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: calc(var(--sizeindex) * 0.7);
+}
+
+.file_name:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+

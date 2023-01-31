@@ -1,0 +1,36 @@
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+.footer {
+    
+    margin-top: auto;
+    padding: 2vh 0;
+}
+
+.footer.position {
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: normal;
+}
+
+.footer-info_text {
+    font-weight: 100;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: calc(var(--index) * 0.7);
+    color: white;
+}
+
+.border_left {
+    border-left: 1px solid white;
+}
